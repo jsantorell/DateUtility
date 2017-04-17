@@ -36,9 +36,9 @@ public class DateUtilities8 {
     }
 /**
  * This method allows to find how much time there is between 2 dates.
- * @param dateUnit
- * @param firstDate
- * @param secondDate
+ * @param dateUnit how you would like it returned to you
+ * @param firstDate the first date to test
+ * @param secondDate the date to compare to the first date.
  * @return
  * @throws IllegalArgumentException 
  */
@@ -76,7 +76,7 @@ public class DateUtilities8 {
     }
 /**
  * Take a string variable and turn it into a date object.
- * @param dateString
+ * @param dateString string to turn into date
  * @return
  * @throws IllegalArgumentException 
  */
