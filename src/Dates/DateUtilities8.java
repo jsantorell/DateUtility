@@ -73,7 +73,7 @@ public class DateUtilities8 {
         return value;
     }
 /**
- * 
+ * Take a string variable and turn it into a date object.
  * @param dateString
  * @return
  * @throws IllegalArgumentException 
@@ -123,7 +123,7 @@ public class DateUtilities8 {
         return date;
     }
 /**
- * 
+ * Take a Date object and format it to a string "MMddyyyy"
  * @param date
  * @return
  * @throws IllegalArgumentException 
@@ -136,7 +136,7 @@ public class DateUtilities8 {
         return df.format(date);
     }
 /**
- * 
+ * Turn a Calaender object and turn it into a Full String
  * @param date
  * @return
  * @throws IllegalArgumentException 
