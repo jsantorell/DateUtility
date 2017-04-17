@@ -126,7 +126,7 @@ public class DateUtilities8 {
     }
 /**
  * Take a Date object and format it to a string "MMddyyyy"
- * @param date
+ * @param date the date you would liek to convert to a string with format "MMddyyyy"
  * @return
  * @throws IllegalArgumentException 
  */
@@ -138,8 +138,8 @@ public class DateUtilities8 {
         return df.format(date);
     }
 /**
- * Turn a Calaender object and turn it into a Full String
- * @param date
+ * Turn a Calender object and turn it into a Full String
+ * @param date calender date to convert to string
  * @return
  * @throws IllegalArgumentException 
  */
