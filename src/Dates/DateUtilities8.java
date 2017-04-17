@@ -4,19 +4,17 @@ import java.text.*;
 import java.time.*;
 import java.util.*;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 /**
  *
- * @author jerem
+ * @author Jeremy Santorelli
+ * @version 1.0
  */
 public class DateUtilities8 {
 
     private static DateUtilities8 instance;
-
+/**
+ */
     public enum TimeUnit {
 
         DAY(3600000 * 24),
@@ -34,7 +32,14 @@ public class DateUtilities8 {
             return milliseconds;
         }
     }
-
+/**
+ * This method allows to find how much time there is between 2 dates.
+ * @param dateUnit
+ * @param firstDate
+ * @param secondDate
+ * @return
+ * @throws IllegalArgumentException 
+ */
     public int differnceBetween2Dates(utility.DateUtilities.DateUnit dateUnit, Calendar firstDate, Calendar secondDate)
             throws IllegalArgumentException {
 
@@ -67,7 +72,12 @@ public class DateUtilities8 {
 
         return value;
     }
-
+/**
+ * 
+ * @param dateString
+ * @return
+ * @throws IllegalArgumentException 
+ */
     public Date turnStringIntoDateObject(String dateString) throws IllegalArgumentException {
         Date date = null;
         DateFormat df;
@@ -112,7 +122,12 @@ public class DateUtilities8 {
         }
         return date;
     }
-
+/**
+ * 
+ * @param date
+ * @return
+ * @throws IllegalArgumentException 
+ */
     public String toStringMMddyyyy(Date date) throws IllegalArgumentException {
         if (date == null) {
             throw new IllegalArgumentException("Error: date argument cannot be null");
@@ -120,7 +135,12 @@ public class DateUtilities8 {
         DateFormat df = new SimpleDateFormat("MMddyyyy");
         return df.format(date);
     }
-
+/**
+ * 
+ * @param date
+ * @return
+ * @throws IllegalArgumentException 
+ */
     public String toString(Calendar date) throws IllegalArgumentException {
         DateFormat df = DateFormat.getDateInstance();
         return df.format(date.getTime());
