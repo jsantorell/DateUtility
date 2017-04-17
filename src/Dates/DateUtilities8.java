@@ -6,14 +6,16 @@ import java.util.*;
 
 
 /**
- *
+ *This is a simple date utility which allows for manipulating dates in various ways.
  * @author Jeremy Santorelli
  * @version 1.0
  */
+
 public class DateUtilities8 {
 
     private static DateUtilities8 instance;
 /**
+ * Idea obtained from sample provided to me. This is an enumeration which allows for easy navigation through a switch statement.
  */
     public enum TimeUnit {
 
